@@ -11,7 +11,10 @@ const ContactListItem = ({ user }) => {
 
   return (
     <Pressable onPress={() => {}} style={styles.container}>
-      <Image source={{ uri: user.image }} style={styles.image} />
+      <Image
+        source={{ uri: 'https://notjustdev-dummy.s3.us-east-2.amazonaws.com/avatars/biahaze.jpg' }}
+        style={styles.image}
+      />
 
       <View style={styles.content}>
         <Text style={styles.name} numberOfLines={1}>
@@ -39,6 +42,9 @@ const styles = StyleSheet.create({
     height: 60,
     borderRadius: 30,
     marginRight: 10,
+  },
+  content: {
+    flex: 1,
   },
   name: {
     fontWeight: 'bold',
